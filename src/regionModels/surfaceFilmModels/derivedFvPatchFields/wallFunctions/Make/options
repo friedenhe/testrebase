@@ -1,0 +1,27 @@
+EXE_INC = \
+    -I$(LIB_SRC)/transportModels/compressible/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/specie/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/thermophysicalProperties/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/reactionThermo/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/SLGThermo/lnInclude \
+    -I$(LIB_SRC)/TurbulenceModels/turbulenceModels/lnInclude \
+    -I$(LIB_SRC)/TurbulenceModels/compressible/lnInclude \
+    -I$(LIB_SRC)/regionModels/regionModel/lnInclude \
+    -I$(LIB_SRC)/regionModels/surfaceFilmModels/lnInclude\
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude
+
+LIB_LIBS = \
+    -lcompressibleTransportModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lfluidThermophysicalModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lspecie$(WM_CODI_AD_LIB_POSTFIX) \
+    -lthermophysicalProperties$(WM_CODI_AD_LIB_POSTFIX) \
+    -lreactionThermophysicalModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lSLGThermo$(WM_CODI_AD_LIB_POSTFIX) \
+    -lturbulenceModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lcompressibleTurbulenceModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lregionModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lsurfaceFilmModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lfiniteVolume$(WM_CODI_AD_LIB_POSTFIX) \
+    -lmeshTools$(WM_CODI_AD_LIB_POSTFIX)

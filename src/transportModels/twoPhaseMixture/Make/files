@@ -1,0 +1,3 @@
+twoPhaseMixture/twoPhaseMixture.C
+
+LIB = $(FOAM_LIBBIN)/libtwoPhaseMixture$(WM_CODI_AD_LIB_POSTFIX)

@@ -1,0 +1,23 @@
+EXE_INC = \
+    -I$(LIB_SRC)/transportModels/compressible/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/basic/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/specie/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/solidThermo/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/SLGThermo/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/thermophysicalProperties/lnInclude \
+    -I$(LIB_SRC)/thermophysicalModels/reactionThermo/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/surfMesh/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/parallel/distributed/lnInclude
+
+LIB_LIBS = \
+    -lcompressibleTransportModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lfluidThermophysicalModels$(WM_CODI_AD_LIB_POSTFIX) \
+    -lspecie$(WM_CODI_AD_LIB_POSTFIX) \
+    -lsolidThermo$(WM_CODI_AD_LIB_POSTFIX) \
+    -lSLGThermo$(WM_CODI_AD_LIB_POSTFIX) \
+    -lthermophysicalProperties$(WM_CODI_AD_LIB_POSTFIX) \
+    -lfiniteVolume$(WM_CODI_AD_LIB_POSTFIX) \
+    -lmeshTools$(WM_CODI_AD_LIB_POSTFIX) \
+    -ldistributed$(WM_CODI_AD_LIB_POSTFIX)

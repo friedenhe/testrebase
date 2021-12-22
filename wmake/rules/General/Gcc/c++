@@ -1,0 +1,19 @@
+SUFFIXES += .C .cc .cpp .cxx
+
+CC          = g++ -std=c++11
+
+ptFLAGS     = -DNoRepository -ftemplate-depth-100
+
+# - Standard warnings
+# - Less restrictive warnings (may be needed for flex++, CGAL, etc.)
+
+# CoDiPack4OpenFOAM Deleted old style and non virtual warnings
+c++WARN     = \
+    -Wall -Wextra \
+    -Wno-unused-parameter -Wno-invalid-offsetof \
+    -Wno-attributes -Wno-unknown-pragmas
+
+c++LESSWARN = \
+    -Wno-old-style-cast -Wno-unused-local-typedefs -Wno-array-bounds \
+    -Wno-deprecated-declarations \
+    -fpermissive

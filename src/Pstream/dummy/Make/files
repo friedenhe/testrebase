@@ -1,0 +1,5 @@
+UPstream.C
+UIPread.C
+UOPwrite.C
+
+LIB = $(FOAM_LIBBIN)/dummy/libPstream$(WM_CODI_AD_LIB_POSTFIX)
